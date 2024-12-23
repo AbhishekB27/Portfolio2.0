@@ -56,6 +56,9 @@ export default {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      fontSize: {
+        responsive: "clamp(3.3rem, 1.1359rem + 9.2334vw, 10rem)",
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],

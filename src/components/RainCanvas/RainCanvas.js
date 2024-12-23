@@ -13,7 +13,7 @@ const RainCanvas = () => {
 
     const raindrops = [];
     const particles = [];
-    const gravity = 0.5;
+    const gravity = 0.1;
 
     class Raindrop {
       constructor(x, y, speed) {
@@ -41,7 +41,7 @@ const RainCanvas = () => {
       }
 
       splash() {
-        for (let i = 0; i < 5; i++) {
+        for (let i = 0; i < 3; i++) {
           particles.push(
             new Particle(
               this.x,
@@ -86,7 +86,7 @@ const RainCanvas = () => {
     }
 
     // Initialize raindrops
-    for (let i = 0; i < 100; i++) {
+    for (let i = 0; i < 30; i++) {
       raindrops.push(
         new Raindrop(
           Math.random() * canvas.width,
