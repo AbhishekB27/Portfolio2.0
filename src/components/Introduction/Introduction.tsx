@@ -7,8 +7,8 @@ import {
 } from "framer-motion";
 import React, { useRef } from "react";
 import Link from "next/link";
-import { MyTechStack } from "../MyTechStack/MyTechStack";
 import { MyProjects } from "../MyProjects/MyProjects";
+import { SmoothScrollHero } from "../ui/SmoothScroll";
 
 export const Introduction = () => {
     const targetRef = useRef(null);
@@ -69,8 +69,8 @@ export const Introduction = () => {
                 </div>
 
             </section>
-            <MyTechStack />
             <MyProjects />
+            <SmoothScrollHero />
 
         </div>
     );

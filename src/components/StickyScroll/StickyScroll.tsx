@@ -8,6 +8,7 @@ import { AuroraHero } from '../AuraHero/AuraHero';
 import HeroSection from '../HeroSection/HeroSection';
 import { Introduction } from '../Introduction/Introduction';
 import { MyTechStack } from '../MyTechStack/MyTechStack';
+import { SmoothScrollHero } from '../ui/SmoothScroll';
 
 export default function StickyScroll() {
     const container = useRef();
@@ -54,6 +55,8 @@ const Section2 = ({ scrollYProgress }) => {
             >
                 {/* <AuroraHero /> */}
                 <Introduction />
+                <SmoothScrollHero />
+
             </motion.section>
 
         </>
